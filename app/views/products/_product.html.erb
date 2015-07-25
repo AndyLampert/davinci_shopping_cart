@@ -1,0 +1,8 @@
+<tr>
+  <td><%= image_tag(product.image_url) %></td>
+  <td><%= product.name %></td>
+  <td><%= product.description %></td>
+  <td><%= product.price %></td>
+  <td><%= button_to 'Add to Cart', line_items_path(product_id: product) %></td>
+</tr>
+
